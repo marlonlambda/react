@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from './components/Card/Card'
+import { Formulario } from '../FormularioInteractivo/Formulario';
 
 const productos = [
   { 
@@ -27,6 +28,9 @@ const productos = [
 
 export const ListaProductos = () => {
   return (
-    <Card products={productos}/>
+    <div className='flex flex-col justify-center gap-y-4'>
+      <Formulario />
+      <Card products={productos}/>
+    </div>
   )
 }

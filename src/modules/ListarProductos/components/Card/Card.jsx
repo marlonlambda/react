@@ -7,7 +7,7 @@ export const Card = ({ products }) => {
     <div className="flex justify-center items-center ">
         <div className="grid grid-cols-3 gap-4">
             {products.map(( product ) => (
-                <div key={ product.id } className="flex flex-col bg-white border border-black/15 rounded-lg shadow-md relative transition hover:opacity-90">
+                <div key={ product.id } className="flex flex-col bg-white border border-black/15 rounded-lg shadow-md transition hover:opacity-90">
                     <figure>
                         <img src={ product.img } alt={ product.nombre } className="w-full h-48 object-cover rounded-md" />
                     </figure>
