@@ -1,6 +1,7 @@
 import { Bienvenida } from './modules/Bienvenida/Bienvenida'
 import { Card } from './modules/ListarProductos/components/Card/Card';
 import { ListaProductos } from './modules/ListarProductos/ListaProductos'
+import { Navbar } from './ui/components/navbar/Navbar';
 
 function App() {
   const productos = [
@@ -29,6 +30,7 @@ function App() {
   
   return (
     <>
+      <Navbar />
       <Bienvenida nombre='Marlon'/>
       <Card  products={productos}/>
     </>
