@@ -1,6 +1,6 @@
-import { Bienvenida } from './components/Bienvenida'
-import { Card } from './components/Card/Card';
-import { ListaProductos } from './components/ListaProductos'
+import { Bienvenida } from './modules/Bienvenida/Bienvenida'
+import { Card } from './modules/ListarProductos/components/Card/Card';
+import { ListaProductos } from './modules/ListarProductos/ListaProductos'
 
 function App() {
   const productos = [
@@ -30,7 +30,6 @@ function App() {
   return (
     <>
       <Bienvenida nombre='Marlon'/>
-      <ListaProductos productos={productos}/>
       <Card  products={productos}/>
     </>
   )

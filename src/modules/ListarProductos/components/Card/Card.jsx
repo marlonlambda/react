@@ -1,5 +1,6 @@
 import React from "react";
-import { ButtonCard } from "../../modules/ListarProductos/components/ButtonCard/ButtonCard";
+import { ButtonCard } from "../ButtonCard/ButtonCard";
+import { Contador } from "../../../Contador/Contador";
 
 export const Card = ({ products }) => {
   return (
@@ -13,10 +14,11 @@ export const Card = ({ products }) => {
                     <div className="flex flex-col p-4 mt-2 gap-y-2">
                         <h2 className="text-md font-semibold rounded-md">{ product.nombre }</h2>
                         <span className="text-gray-700  text-sm">{ product.descripcion }</span>
+                        <span className="text-lg text-blue-900 font-semibold">${ product.precio }</span>
                     </div>
-                    <div className="flex items-center w-full p-2 mb-2">
+                    <div className="flex justify-between items-center w-full p-2 mb-2">
                         <ButtonCard />
-                        <span className="flex justify-end w-full text-lg text-blue-900 font-semibold">${ product.precio }</span>
+                        <Contador />
                     </div>
                 </div>
             ))}
