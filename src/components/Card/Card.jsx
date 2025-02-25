@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonCard } from "../ButtonCard/ButtonCard";
+import { ButtonCard } from "../../modules/ListarProductos/components/ButtonCard/ButtonCard";
 
 export const Card = ({ products }) => {
   return (
